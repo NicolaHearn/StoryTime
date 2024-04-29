@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../libs/css/main.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>StoryTime</title>
+  </head>
+  <body>
+    <div class="container-fluid d-flex justify-content align-items-center">
+      <div class="container rounded p-5">
+        <div
+          class="header bg-primary rounded d-flex justify-content-start align-items-end"
+        >
+          <div class="d-flex flex-column mx-5">
+            <h1>Story Time</h1>
+            <p class="fst-italic">Inspiration for bedtime stories</p>
+          </div>
+        </div>
+        <div class="form-container">
+          <form class="story-details">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-3 mt-5">
+                  <label for="childAge" class="form-label">Child's age</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="childAge"
+                    name="childAge"
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="storyLength" class="form-label"
+                    >Length of story</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="storyLength"
+                    name="storyLength"
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mb-3 mt-5">
+                  <label for="theme" class="form-label">Theme</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="theme"
+                    name="theme"
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="theme" class="form-label">Setting</label>
+                  <input type="text" class="form-control" id="setting" />
+                </div>
+                <div class="my-3">
+                  <label for="characters" class="form-label"
+                    >Character name(s)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="characters"
+                    name="characters"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-1 mb-3">
+              <label for="additionalInfo" class="form-label"
+                >Additional information and keywords</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="additionalInfo"
+                name="additionalInfo"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="start-only" />
+              <label class="form-check-label" for="start-only"
+                >Just give me the beginning of the story, I want to do the
+                rest</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="story-container rounded mt-5 p-4 inactive">
+          <div class="story">
+            <h3 class="story-title"></h3>
+          </div>
+
+          <button class="new-story-btn btn btn-primary">New Story</button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

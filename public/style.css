@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #030c5d, #90bafc);
+  color: #fff;
+  padding: 10px;
+}
+
+.container {
+  width: 60%;
+  /* background-color: #fbdfa5; */
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.header {
+  background-image: url("./images/storyTime.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.inactive {
+  display: none;
+}
+
+.story-container {
+  background-color: white;
+  color: darkslategray;
+}
+input {
+  color: darkslategray;
+}
